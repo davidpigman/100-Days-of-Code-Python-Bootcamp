@@ -37,21 +37,20 @@ def cipher(direction, text, shift):
 
     print(f"Here is the {direction}d result: {output_text_string}")
 
+again = True
 
 print(logo)
 
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number\n"))
-cipher(direction, text, shift)
-
-run_question = input("Would you like to have another go Yes/No?")
-if run_question == 'Yes':
-  cipher(direction, text, shift)
-  direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-  text = input("Type your message:\n").lower()
-  shift = int(input("Type the shift number\n"))
-  cipher(direction, text, shift)
+while again:
+   
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number\n"))
+    cipher(direction, text, shift)
+    run_question = input("Would you like to have another go Yes/No?")
+    if run_question == 'No':
+        again = False
+        print("Goodbye!")
 
 # TODO-1: Create a function called encrypt() that takes original text and shift_amount as 2 inputs.
 
