@@ -1,4 +1,4 @@
-#Original working solution not optimized with functions
+#Solution optimized with name function
 def format_name(name):
     name_len = len(name)
     name_typecase = ""
