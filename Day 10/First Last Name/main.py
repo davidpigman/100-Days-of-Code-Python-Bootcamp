@@ -1,13 +1,14 @@
 #Solution optimized with name function
 def format_name(name):
-    name_len = len(name)
-    name_typecase = ""
+    #name_len = len(name)
+    #name_typecase = ""
+    name_typecase = name.title()
 
-    for position, letter in enumerate(name):
-        if position == 0:
-            name_typecase += name[0].upper()
-        else:
-            name_typecase += name[position].lower()
+    #for position, letter in enumerate(name):
+    #    if position == 0:
+    #        name_typecase += name[0].upper()
+    #    else:
+    #        name_typecase += name[position].lower()
         
         #Debugging Statement
         #print(f"name_typecase {name_typecase} {position}")
