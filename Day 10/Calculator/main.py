@@ -32,15 +32,15 @@ while continue_calc_loop:
     continue_calc_count += 1
 
     if continue_calc_count == 1:
-        first_number = int(input("What's the first number? "))
+        first_number = float(input("What's the first number? "))
     else:
         if continue_calc == "y":
             first_number = output
         else:
-            first_number = int(input("What's the first number? "))
+            first_number = float(input("What's the first number? "))
 
     operation = input("Pick an operation ")
-    second_number = int(input("What's the next number "))
+    second_number = float(input("What's the next number "))
 
     output = calculations[operation](first_number, second_number)
 
