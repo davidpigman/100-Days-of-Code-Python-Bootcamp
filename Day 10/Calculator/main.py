@@ -1,3 +1,5 @@
+from art import logo
+
 def add(n1, n2):
     return n1 + n2
 
@@ -24,9 +26,10 @@ calculations = {
     "/": divide
 }
 
-print(f"calculations!! {calculations}")
+#print(f"calculations!! {calculations}")
 
 # TODO 3: Use the dictionary operations to perform the calculations. Multiply 4 * 8 using the dictionary.
+print(logo)
 
 while continue_calc_loop:
     continue_calc_count += 1
