@@ -1,11 +1,12 @@
 # TODO-1: Ask the user for input
 bids = {}
 more_bids = True
+print("Welcome to the secret auction program.")
 while more_bids:
-    print("Welcome to the secret auction program.")
     name = input("What is your name? ")
     bid = input("What's your bid? ")
     other_bidders = input("Are there any other bidders?  Type 'yes' or 'no' ")
+    print("\n" * 100)
     if other_bidders == 'no':
         more_bids = False
 
@@ -21,7 +22,7 @@ highest_bid = 0
 for bidder in bids:
     bid = int(bids[bidder])
 
-    print(f"bidder {bidder} bid {bid}")
+    #print(f"bidder {bidder} bid {bid}")
     if bid > highest_bid:
       highest_bidder = bidder
       highest_bid = bid
